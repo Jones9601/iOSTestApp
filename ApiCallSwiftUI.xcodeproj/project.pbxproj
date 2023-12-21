@@ -26,6 +26,8 @@
 		0D3BF1F427871F4D006B3C3E /* MockCommentViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BF1F327871F4D006B3C3E /* MockCommentViewService.swift */; };
 		0D3BF1F8278721D7006B3C3E /* CommentViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3BF1F7278721D7006B3C3E /* CommentViewModelTests.swift */; };
 		0D3BF1F9278722E6006B3C3E /* Comments.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D3BF1F127871F38006B3C3E /* Comments.json */; };
+		271999882B34577A0004D4E4 /* issuer.json in Resources */ = {isa = PBXBuildFile; fileRef = 271999872B34577A0004D4E4 /* issuer.json */; };
+		271999892B34583F0004D4E4 /* issuer.json in Resources */ = {isa = PBXBuildFile; fileRef = 271999872B34577A0004D4E4 /* issuer.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 		0D3BF1F127871F38006B3C3E /* Comments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comments.json; sourceTree = "<group>"; };
 		0D3BF1F327871F4D006B3C3E /* MockCommentViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommentViewService.swift; sourceTree = "<group>"; };
 		0D3BF1F7278721D7006B3C3E /* CommentViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModelTests.swift; sourceTree = "<group>"; };
+		271999872B34577A0004D4E4 /* issuer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = issuer.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 				0D3BF1C42787136E006B3C3E /* ApiCallSwiftUITests.swift */,
 				0D3BF1F327871F4D006B3C3E /* MockCommentViewService.swift */,
 				0D3BF1F7278721D7006B3C3E /* CommentViewModelTests.swift */,
+				271999872B34577A0004D4E4 /* issuer.json */,
 			);
 			path = ApiCallSwiftUITests;
 			sourceTree = "<group>";
@@ -320,6 +324,7 @@
 			files = (
 				0D3BF1BB2787136D006B3C3E /* Preview Assets.xcassets in Resources */,
 				0D3BF1F9278722E6006B3C3E /* Comments.json in Resources */,
+				271999892B34583F0004D4E4 /* issuer.json in Resources */,
 				0D3BF1B82787136D006B3C3E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +333,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271999882B34577A0004D4E4 /* issuer.json in Resources */,
 				0D3BF1F227871F38006B3C3E /* Comments.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
