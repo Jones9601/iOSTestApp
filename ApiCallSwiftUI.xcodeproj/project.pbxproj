@@ -152,6 +152,7 @@
 		0D3BF1B22787136B006B3C3E /* ApiCallSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				271999862B3453910004D4E4 /* submodule */,
 				0D3BF1EC27871A47006B3C3E /* Network */,
 				0D3BF1B32787136B006B3C3E /* ApiCallSwiftUIApp.swift */,
 				0D2C136D29623DE700B4027C /* CommentModel.swift */,
@@ -198,6 +199,13 @@
 				0D3BF1EF27871A62006B3C3E /* RestAPIClient.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		271999862B3453910004D4E4 /* submodule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = submodule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
