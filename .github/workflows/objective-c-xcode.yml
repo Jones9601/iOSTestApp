@@ -20,9 +20,14 @@ jobs:
       - uses: maxim-lobanov/setup-xcode@v1
         with:
           xcode-version: latest-stable
-      - uses: eregon/setup-ruby@somebranch
-        with:
-          ruby-version: ${{ matrix.ruby }}
+        
+      - name: Install HomeBrew
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+      # - uses: ruby/setup-ruby@v1
+      - name: Install Ruby
+        run: brew install ruby
 
       - name: Install Bundler
         run: gem install bundler
