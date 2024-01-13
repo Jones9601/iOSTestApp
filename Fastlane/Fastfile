@@ -1,0 +1,44 @@
+fastlane_version '2.157'
+default_platform :ios
+
+platform :ios do
+    desc "Run XCTest for all schemes"
+    lane :test_all_schemes do
+      # List your schemes here
+      schemes = ["Core", "UI"]
+  
+      schemes.each do |scheme|
+        scan(
+          scheme: scheme,
+          output_directory: "test_results/#{scheme}",
+          # Add other scan options as needed
+        )
+      end
+    end
+end
+
+platform :ios do
+    desc "Run SwiftLint"
+    lane :lint do
+      sh "swiftlint"
+    end
+end
+
+platform :ios do
+    desc "Run SwiftLint"
+    lane :build do
+        build_app(scheme: "ApiCallSwiftUI")
+    end
+end
+
+platform :ios do
+    desc "Build and archive the app"
+    lane :archive do
+      gym(
+        scheme: "YourSchemeName", # Replace with your Xcode scheme
+        export_method: "app-store", # or "development" or other applicable export methods
+        output_directory: "./output", # Change to your desired output directory
+        output_name: "YourAppArchive", # Replace with your desired archive name
+      )
+    end
+end

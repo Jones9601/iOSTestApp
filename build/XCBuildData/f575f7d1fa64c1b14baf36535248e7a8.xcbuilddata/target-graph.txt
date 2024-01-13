@@ -1,0 +1,6 @@
+Target dependency graph (3 targets)
+Alamofire in Alamofire, no dependencies
+Alamofire in Alamofire, depends on:
+Alamofire in Alamofire (explicit)
+ApiCallSwiftUI in ApiCallSwiftUI, depends on:
+Alamofire in Alamofire (explicit)
