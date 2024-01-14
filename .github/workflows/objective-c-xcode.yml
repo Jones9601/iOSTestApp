@@ -32,8 +32,8 @@ jobs:
       - name: Install Bundler
         run: gem install bundler
 
-      - name: Install gems
-        run: bundle install
+      - name: Install fastlane
+        run: brew install fastlane
 
       - name: Swift Packages Cache
         uses: actions/cache@v2
