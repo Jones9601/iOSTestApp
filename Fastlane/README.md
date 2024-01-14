@@ -15,14 +15,6 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## iOS
 
-### ios test_all_schemes
-
-```sh
-[bundle exec] fastlane ios test_all_schemes
-```
-
-Run XCTest for all schemes
-
 ### ios lint
 
 ```sh
@@ -30,30 +22,6 @@ Run XCTest for all schemes
 ```
 
 Run SwiftLint
-
-### ios build
-
-```sh
-[bundle exec] fastlane ios build
-```
-
-Run SwiftLint
-
-### ios archive
-
-```sh
-[bundle exec] fastlane ios archive
-```
-
-Build and archive the app
-
-### ios release
-
-```sh
-[bundle exec] fastlane ios release
-```
-
-Build and build_ipa
 
 ----
 
