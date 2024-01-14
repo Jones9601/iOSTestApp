@@ -10,6 +10,8 @@ import Foundation
 class CommentViewModel: ObservableObject {
     private let commentViewService: CommentViewServiceDelegate
     
+    let data1: String? = ""
+    
     init(commentViewService: CommentViewServiceDelegate = CommentViewService()) {
         self.commentViewService = commentViewService
     }
@@ -18,9 +20,10 @@ class CommentViewModel: ObservableObject {
     
     func fetchComments() {
         commentViewService.getComments { result in
-            var data = "Jones"
+            let data = "Jones"
+            let data2: String = self.data1!
             
-            print("========= > \(data)")
+            print("========= > \(data) \(data2)")
             switch result {
             case .success(let comments):
                 print("Fetched new comments")
