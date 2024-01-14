@@ -18,7 +18,9 @@ class CommentViewModel: ObservableObject {
     
     func fetchComments() {
         commentViewService.getComments { result in
-            print("========= > \(result)")
+            var data = "Jones"
+            
+            print("========= > \(data)")
             switch result {
             case .success(let comments):
                 print("Fetched new comments")
