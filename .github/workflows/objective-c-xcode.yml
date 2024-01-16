@@ -16,7 +16,6 @@ jobs:
         xcode-version: latest-stable
     - name: Install Dependencies
       run: |
-        gem install
         pod install
     - uses: sparkfabrik/ios-build-action@v2.3.0
       with:
