@@ -17,10 +17,13 @@ jobs:
     - name: Install Dependencies
       run: |
         pod install
-    - uses: sparkfabrik/ios-build-action@v2.3.0
-      with:
-        xcodeproj: ApiCallSwiftUI.xcodeproj
-        scheme: ApiCallSwiftUI
+    - name: Build Generate
+      run: |
+        xcodebuild archive -workspace MyApp.xcworkspace -scheme MyApp -archivePath ${{ runner.temp }}/MyApp.xcarchive
+    # - uses: sparkfabrik/ios-build-action@v2.3.0
+    #   with:
+    #     xcodeproj: ApiCallSwiftUI.xcodeproj
+    #     scheme: ApiCallSwiftUI
   # SwiftLint:
   #   runs-on: ubuntu-latest
   #   steps:
