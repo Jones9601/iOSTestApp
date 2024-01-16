@@ -7,9 +7,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  steps:
+  build:
+    runs-on: macos-latest
+    steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-xcode@v4
+    - uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: latest-stable
   # SwiftLint:
   #   runs-on: ubuntu-latest
   #   steps:
