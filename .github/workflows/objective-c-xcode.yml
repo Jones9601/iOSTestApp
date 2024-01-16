@@ -14,6 +14,14 @@ jobs:
     - uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: latest-stable
+    - name: Install Dependencies
+      run: |
+        gem install
+        pod install
+    - uses: sparkfabrik/ios-build-action@v1
+      with:
+        xcodeproj: ApiCallSwiftUI.xcodeproj
+        scheme: ApiCallSwiftUI
   # SwiftLint:
   #   runs-on: ubuntu-latest
   #   steps:
